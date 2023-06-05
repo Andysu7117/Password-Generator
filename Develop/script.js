@@ -1,14 +1,14 @@
 // Assignment code here
-// Special Characters
+// String of all the Special Characters
 var specialCharacters = "!@#$%^&*()-_=+[]{}|;:,.<>?"
 
-// Array of numeric characters to be included in password
+// String of all numeric characters
 var numericCharacters = "0123456789"
 
-// Array of lowercase characters to be included in password
+// String of all of lowercase characters
 var lowerCasedCharacters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
-// Array of uppercase characters to be included in password
+// String of all uppercase characters
 var upperCasedCharacters = "abcdefghijklmnopqrstuvwxyz"
 
 // Generate Password Function
@@ -16,7 +16,7 @@ function generatePassword() {
   // length of password
   var length = prompt("Choose desired length between 8-128 Characters")
 
-  // if selected number outside range
+  // Alert if selected number outside range
   if (length < 8 || length > 128) {
     alert("Invalid Password Length. Please enter a number between 8 and 128");
     return;
@@ -34,7 +34,7 @@ function generatePassword() {
     return;
   }
 
-  // characters available for password depending on selections
+  // Adding characters that user has selected to empty string
   let characterPool = "";
 
   if (includeSpecial) {
@@ -59,6 +59,8 @@ function generatePassword() {
     var randomNumber = Math.floor(Math.random() * characterPool.length);
     password += characterPool.charAt(randomNumber);
   }
+
+  // return password variable for function
   return password
 }
 
