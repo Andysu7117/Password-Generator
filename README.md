@@ -7,6 +7,8 @@ The project is a password generator made with javascript. It allows users to sel
 The project can be accessed from the following webpage: https://andysu7117.github.io/Password-Generator/
 
 The webpage should look like the following Screenshot:
+![image](https://github.com/Andysu7117/Password-Generator/assets/104291853/64ae06c1-0f99-4785-8798-f40ae58a53ab)
+
 
 ## How to use
 To use this project just press the generate button in the webpage. A window console will pop up allowing you to input the length and select what characters you want for you generated password.
